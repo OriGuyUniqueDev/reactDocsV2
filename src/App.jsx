@@ -3,6 +3,7 @@ import "./App.css";
 import MyButton from "./components/MyButton";
 import Card from "./components/Card";
 import ConditionalRendering from "./components/ConditionalRendering";
+import RenderingLists from "./components/RenderingLists";
 
 function App() {
 	return (
@@ -35,20 +36,42 @@ function App() {
 					<h2 className="text-2xl underline decoration-indigo-500">Creating and nesting components</h2>
 					<p>React components are JavaScript functions that return markup</p>
 					<MyButton>Im Button Component</MyButton>
-					<p>go to <code>./src/App.jsx</code> line 35 and try to duplicate, Component are reuseable! </p>
+					<p>
+						go to <code>./src/App.jsx</code> line 35 and try to duplicate, Component are reuseable!{" "}
+					</p>
 				</div>
+				<hr></hr>
 				<div className="mainContainer flex flex-col gap-3 ">
 					<h2 className="text-2xl underline decoration-indigo-500">Displaying data</h2>
-					<p>To display dynamic data we can use <code>curly bracelets </code></p>
+					<p>
+						To display dynamic data we can use <code>curly bracelets </code>
+					</p>
 					<Card />
-					<p>go to <code>./src/components/Card.jsx</code> to see how to enter dynamic data </p>
+					<p>
+						go to <code>./src/components/Card.jsx</code> to see how to enter dynamic data{" "}
+					</p>
 				</div>
+				<hr></hr>
 				<div className="mainContainer flex flex-col gap-3 ">
 					<h2 className="text-2xl underline decoration-indigo-500">Conditional Rendering</h2>
 					<p>In React, there is no special syntax for writing conditions. Instead, you’ll use the same techniques as you use when writing regular JavaScript code.</p>
 					<ConditionalRendering />
-					<p>go to <code>./src/components/ConditionalRendering.jsx</code> to see how the ternary if works to display the data</p>
+					<p>
+						go to <code>./src/components/ConditionalRendering.jsx</code> to see how the ternary if works to display the data
+					</p>
 				</div>
+				<hr></hr>
+				<div className="mainContainer flex flex-col gap-3 ">
+					<h2 className="text-2xl underline decoration-indigo-500">Rendering List (Arrays)</h2>
+					<p>
+						In many cases we will want to render a list of card of items from an array, We can use <code>Array.map()</code> to render the items inside the array, the map will return a new array with <code>JSX elements</code> and render it to the DOM
+					</p>
+					<RenderingLists />
+					<p>
+						go to <code>./src/components/RenderingList.jsx</code> to see how the <code>Array.map()</code> words
+					</p>
+				</div>
+				<hr></hr>
 			</div>
 		</div>
 	);
