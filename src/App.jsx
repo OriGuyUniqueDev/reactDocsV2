@@ -47,7 +47,7 @@ function App() {
 					<p>React components are JavaScript functions that return markup</p>
 					<MyButton>Im Button Component</MyButton>
 					<p>
-						go to <code>./src/App.jsx</code> line 35 and try to duplicate, Component are reuseable!{" "}
+						go to <code>./src/App.jsx</code> line 48 and try to duplicate, Component are reuseable!{" "}
 					</p>
 				</div>
 				<hr></hr>
@@ -111,9 +111,9 @@ function App() {
 					<p>all other components are nested inside of it (Card, MyButton...)</p>
 					<p>if we want to share data all we need to do is to move the data from the lower branch (Card, MyButton...) to the higher branch in out example is the root (App)</p>
 					<p>num in App: {num}</p>
-					<SharingDataBetweenComponents num={num} onClick={updateNum}></SharingDataBetweenComponents>
+					<SharingDataBetweenComponents num={num} changeNum={updateNum}></SharingDataBetweenComponents>
 					<p>
-						go to <code>./src/components/StatesUpdateTheScreen.jsx</code> to see how the setState works
+						go to <code>./src/components/SharingDataBetweenComponents.jsx</code> to see how the setState works
 					</p>
 				</div>
 				<hr></hr>

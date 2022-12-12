@@ -53,3 +53,34 @@ h1 {
   }
 
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 20px;
+ 
+  
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #c7d2fe00;
+  height: 20px;
+ 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #6366f1;
+  transition: all 0.35s ease;
+  border-radius: 999px;
+  height: 20px;
+  
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #4338ca;
+  transition: all 0.35s ease;
+  height: 20px;
+}

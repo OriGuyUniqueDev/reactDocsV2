@@ -19,7 +19,7 @@ function ConditionalRendering() {
     <span onClick={() => setFood(!food)}>
         <MyButton>Click to Change Food</MyButton>
     </span>
-    <p className="text-4xl">{food ? '🍕' : '🍔'}</p>
+    <p className="text-4xl">{food ? <Pizza /> : <Hamburger />}</p>
 
     </>
 }
